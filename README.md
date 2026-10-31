@@ -9,12 +9,14 @@
   &nbsp;·&nbsp;
   <a href="https://github.com/RishitheB0T/product-catalog-service"><b>product-catalog-service</b></a>
   &nbsp;·&nbsp;
+  <a href="https://github.com/RishitheB0T/tiny-reasoner"><b>tiny-reasoner</b></a>
+  &nbsp;·&nbsp;
   <a href="https://github.com/RishitheB0T/kestrel-rtos"><b>kestrel-rtos</b></a>
   &nbsp;·&nbsp;
   <a href="https://github.com/RishitheB0T/RL_PID"><b>RL_PID</b></a>
 </p>
 
-<img src="./assets/about.svg" width="100%" alt="Terminal. whoami: Rishikesh Kallapally, EIE undergrad at NIT Silchar, class of 2027. Builds backends and full-stack apps, and writes firmware on the side. Stack: backend (Java 21, Spring Boot, Spring Security with JWT, JPA, Flyway), frontend (React 19, TypeScript, Vite, Tailwind CSS, Vitest), data (PostgreSQL with pgvector, MySQL, Redis), AI (Spring AI, RAG, tool calling), embedded (C, Thumb-2 assembly, Cortex-M4, CMSIS-DSP). Now: placement-prep is next adding company-wise AI mock interviews; product-catalog has 11 of 16 phases done, with a React storefront next; kestrel-rtos is next getting real-board cycle counts on an STM32F4; tiny-reasoner is training a tiny language model from scratch to reason with GRPO; RL_PID is done: it beats the published agent and runs on an STM32F4; the portfolio is live at rishitheb0t.github.io/portfolio." />
+<img src="./assets/about.svg" width="100%" alt="Terminal. whoami: Rishikesh Kallapally, EIE undergrad at NIT Silchar, class of 2027. Builds backends and full-stack apps, and writes firmware on the side. Stack: backend (Java 21, Spring Boot, Spring Security with JWT, JPA, Flyway), frontend (React 19, TypeScript, Vite, Tailwind CSS, Vitest), data (PostgreSQL with pgvector, MySQL, Redis), AI (Spring AI, RAG, tool calling, PyTorch), embedded (C, Thumb-2 assembly, Cortex-M4, CMSIS-DSP). Now: placement-prep is next adding company-wise AI mock interviews; product-catalog has 11 of 16 phases done, with a React storefront next; kestrel-rtos is next getting real-board cycle counts on an STM32F4; tiny-reasoner is done: a language model built from scratch, where reinforcement learning (GRPO) took level-5 accuracy from 52 to 96 percent; RL_PID is done: it beats the published agent and runs on an STM32F4; the portfolio is live at rishitheb0t.github.io/portfolio." />
 
 <br />
 
@@ -26,6 +28,10 @@
 
 <a href="https://github.com/RishitheB0T/product-catalog-service">
   <img src="./assets/card-catalog.svg" width="100%" alt="product-catalog-service: a Spring Boot REST API over MySQL and Redis, built from an empty folder in 16 documented phases. Every index was chosen from measured query plans: storefront queries went from about 40 ms to under 1 ms, 73 to 483 times faster, and one trade-off is documented. Redis cache-aside with a MySQL fallback; k6 load tests show cached reads about 3.3 times faster; 107 tests including a simulated Redis outage." />
+</a>
+
+<a href="https://github.com/RishitheB0T/tiny-reasoner">
+  <img src="./assets/card-tiny-reasoner.svg" width="100%" alt="tiny-reasoner (applied AI, a language model from scratch; 41 tests, CI passing): a 4.3 million parameter Llama-style model written from scratch in PyTorch and trained on a 4-core CPU. It learns step-by-step arithmetic, then improves with GRPO reinforcement learning from right-or-wrong rewards. Held-out accuracy, 300 problems per level, after 300 GRPO steps: level 3 from 96.7 to 99.0 percent, level 4 from 94.0 to 98.0, level 5 from 52.0 to 96.0; level 6, never seen in training, stays at 0. For a fair comparison, 1,500 more supervised steps instead reached 98.3 percent on level 5. Also LoRA (long division 0 to 99.7 percent with 5 percent of the weights), a KV cache up to 16 times faster, int8 3.7 times smaller, speculative decoding up to 1.87 times faster and FastAPI token streaming." />
 </a>
 
 <a href="https://github.com/RishitheB0T/kestrel-rtos">
@@ -41,6 +47,7 @@
   <a href="https://github.com/RishitheB0T/placement-prep/blob/main/docs/ARCHITECTURE.md">placement-prep architecture</a> ·
   <a href="https://github.com/RishitheB0T/product-catalog-service/blob/main/docs/QUERY_OPTIMIZATION.md">query-optimization write-up</a> ·
   <a href="https://github.com/RishitheB0T/product-catalog-service/blob/main/docs/DECISIONS.md">design decisions</a> ·
+  <a href="https://github.com/RishitheB0T/tiny-reasoner#-results">tiny-reasoner results</a> ·
   <a href="https://github.com/RishitheB0T/kestrel-rtos#readme">kestrel-rtos internals</a> ·
   <a href="https://github.com/RishitheB0T/RL_PID/blob/main/REPORT.md">RL_PID report</a>
   <br />
@@ -51,7 +58,7 @@
 
 <img src="./assets/sec-journey.svg" width="100%" alt="02 — Journey. How I got here, and what is next." />
 
-<img src="./assets/journey.svg" width="100%" alt="Timeline: 2023, joined NIT Silchar for a B.Tech in Electronics and Instrumentation. May to July 2026, started EdgeMind, ML-based vibration fault detection on an STM32. September to October 2026, shipping software: placement-prep, product-catalog, kestrel-rtos, RL_PID and the portfolio site. Now: placement season, open to software roles for 2026–27." />
+<img src="./assets/journey.svg" width="100%" alt="Timeline: 2023, joined NIT Silchar for a B.Tech in Electronics and Instrumentation. May to July 2026, started EdgeMind, ML-based vibration fault detection on an STM32. September to October 2026, shipping software: placement-prep, product-catalog, kestrel-rtos, tiny-reasoner, RL_PID and the portfolio site. Now: placement season, open to software roles for 2026–27." />
 
 <br />
 
@@ -60,7 +67,7 @@
 <img src="./assets/stack.svg" width="100%" alt="The stack, layer by layer. Frontend: React 19, TypeScript, Vite, Tailwind CSS v4, React Router, Axios, Vitest and Testing Library. Backend: Java 21, Spring Boot 4, Spring Security with JWT, JPA, Bean Validation, Spring AI (tool calling, RAG), JUnit. Data and infra: PostgreSQL 16 with pgvector, MySQL 8.4, Redis, Flyway, Docker Compose, Testcontainers, GitHub Actions, nginx. Beyond the web: C, Thumb-2 assembly, Cortex-M4, CMSIS-DSP, QEMU, Python ML, control systems. Foundations: DSA in Java, OOP, DBMS and SQL, computer networks." />
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,react,ts,tailwind,vite,postgres,mysql,redis,docker,nginx,githubactions,git,python,c&perline=15" alt="Java, Spring, React, TypeScript, Tailwind, Vite, PostgreSQL, MySQL, Redis, Docker, nginx, GitHub Actions, Git, Python, C" />
+  <img src="https://skillicons.dev/icons?i=java,spring,react,ts,tailwind,vite,postgres,mysql,redis,docker,nginx,githubactions,git,python,pytorch,c&perline=16" alt="Java, Spring, React, TypeScript, Tailwind, Vite, PostgreSQL, MySQL, Redis, Docker, nginx, GitHub Actions, Git, Python, PyTorch, C" />
 </p>
 
 <br />
